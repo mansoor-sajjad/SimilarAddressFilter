@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 
 public class SimilarAddressFilter {
     public static void main(String[] args) throws IOException {
+        assert args[0] != null;
+        assert args[1] != null;
         String fileName = args[0];
         String targetFileName = args[1];
-        assert fileName != null;
-        assert targetFileName != null;
 
         System.out.println("Reading from" + fileName);
         File file = new File(fileName);
